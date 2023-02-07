@@ -1,5 +1,5 @@
 import React from 'react'
-import ResidentCard from './residentCard'
+import ResidentCard from './ResidentCard'
 import "./Styles/ResidentList.css"
 
 const ResidentList = ({pagination}) => {
