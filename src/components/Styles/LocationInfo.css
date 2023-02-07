@@ -33,6 +33,15 @@
     
 }
 
+@media (max-width: 540px) {
+    .locationInfo__list{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+}
+
 .locationInfo__item{
     font-weight: 300;
     font-size: 28px;

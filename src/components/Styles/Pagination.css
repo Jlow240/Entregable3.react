@@ -24,8 +24,10 @@
 
 .pagination__item {
     cursor: pointer;
-    border: solid 1px #c1da43;
-    color: #44b4cc;
+    border: solid 1px #448981;
+    background-color: #448981;
+    color: #1b3f42;
+    font-weight: 800;
     text-align: center;
     align-items: center;
     height: 35px;
