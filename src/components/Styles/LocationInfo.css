@@ -1,0 +1,43 @@
+.locationInfo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1da43 ;
+    border: solid 4px #1b3f42;
+    border-radius: 5px;
+    color: #1b3f42 ;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.locationInfo__name {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #44b4cc ;
+}
+
+.locationInfo__list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+@media (max-width: 420px) {
+    .locationInfo__list{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+}
+
+.locationInfo__item{
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.locationInfo__item span {
+    font-weight: 700;
+}

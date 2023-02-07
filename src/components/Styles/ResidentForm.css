@@ -1,0 +1,101 @@
+.residentForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    background-image: url(/src/assets/HeaderImage.jpg);
+    background-color: #1b3f42; /* Se usara si la imagen no esta disponible */
+    height: 200px; /* You must set a specified height */
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+@media (min-width: 460px) {
+    .residentForm {
+    height: 250px;
+    }
+}
+
+@media (min-width: 600px) {
+    .residentForm {
+    height: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+    .residentForm {
+    height: 350px;
+    }
+}
+.residentForm__title {
+
+}
+
+.residentForm__form {
+    height: 300px;
+    width: 275px;
+    position: relative;
+    overflow: hidden;
+}
+
+.residentForm__input {
+    width: 100% ;
+    height: 100%;
+    background-color:#1b3f42;
+    color: #c1da43;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px ;
+    border: none;
+    outline: 0px;
+}
+
+.residentForm__input::placeholder {
+    color: #44b4cc;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+        
+}
+
+.residentForm__lbl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #c1da43;
+}
+
+.residentForm__lbl::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #44b4cc;
+    transform: translateX(-100%);
+    transition: all .7s ease;
+}
+
+.residentForm__lbl-txt {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all .7s ease;
+    color: #c1da43;
+}
+
+.residentForm__form input:focus + .residentForm__lbl .residentForm__lbl-txt {
+    transform: translateY(-120%) ;
+    font-size: 14px;
+    color: #44b4cc;
+}
+
+.residentForm__input:focus + .residentForm__lbl::after {
+    transform: translateX(0%);
+}

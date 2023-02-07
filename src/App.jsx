@@ -50,13 +50,23 @@ function App() {
 
 
   return (
-    <div className="App">
-      <Pagination location={location} RESIDENTS_PERPAGE={RESIDENTS_PERPAGE} setPage={setPage} />
-      <ResidentForm handleSubmit={handleSubmit}/>
-      <LocationInfo location={location}/>
-      <ResidentList pagination={pagination}/>
 
+    <div className="App">
+      <ResidentForm handleSubmit={handleSubmit} />
+      <LocationInfo location={location} />
+      <Pagination
+        location={location}
+        RESIDENTS_PERPAGE={RESIDENTS_PERPAGE}
+        page={page}
+        setPage={setPage} />
+      <ResidentList pagination={pagination} />
+      <Pagination
+        location={location}
+        RESIDENTS_PERPAGE={RESIDENTS_PERPAGE}
+        page={page}
+        setPage={setPage} />
     </div>
+
   )
 }
 
