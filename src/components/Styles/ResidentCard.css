@@ -11,6 +11,7 @@
 
 .residentCard:hover {
     transform: scale(1.05);
+    
 }
 
 .residentCard__img {
@@ -27,7 +28,15 @@
     background-color: #1b3f42;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition: background-color .5s ease-in-out;
+    
 }
+
+.residentCard:hover .residentCard__status{
+    background-color:#448981;
+    
+}
+
 
 .residentCard__status-name {
     font-weight: normal;

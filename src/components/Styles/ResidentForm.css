@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
     padding: 20px 10px;
     background-image: url(/src/assets/HeaderImage.jpg);
     background-color: #1b3f42;
@@ -15,16 +16,21 @@
     background-size: cover;
 }
 
-
-@media (min-width: 460px) {
+@media (max-width: 400px) {
     .residentForm {
-        height: 250px;
+        height: 220px;
     }
 }
 
 @media (max-width: 800px) {
     .residentForm {
         height: 350px;
+    }
+}
+
+@media (max-width: 470px) {
+    .residentForm {
+        height: 220px;
     }
 }
 
@@ -38,7 +44,7 @@
 .residentForm__form {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 60px;
     width: 350px;
     position: relative;
     overflow: hidden;
@@ -53,14 +59,14 @@
 
 .residentForm__title-img {
     width: auto;
-    height: 250px;
+    min-height: auto;
     padding: 0;
     margin: 0;
 }
 
 .residentForm__input {
     width: 80%;
-    max-height: 57px;
+    height: 60px;
     background-color: #1b3f42;
     color: #c1da43;
     font-size: 25px;
@@ -86,17 +92,17 @@
     width: 100%;
     max-height: 100%;
     pointer-events: none;
-    border-bottom: 2px solid #c1da43;
+    border-bottom: 3px solid #c1da43;
 }
 
 .residentForm__lbl::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: -3px;
     width: 100%;
     height: 100%;
-    border-bottom: 3px solid #44b4cc;
+    border-bottom: 4px solid #44b4cc;
     transform: translateX(-100%);
     transition: all .7s ease;
 }
@@ -109,12 +115,6 @@
     color: #c1da43;
 }
 
-.residentForm__form input:focus+.residentForm__lbl .residentForm__lbl-txt {
-    transform: translateY(-120%);
-    font-size: 14px;
-    color: #44b4cc;
-}
-
 .residentForm__input:focus+.residentForm__lbl::after {
     transform: translateX(0%);
 }
@@ -122,7 +122,7 @@
 .residentForm__btn {
     display: flex;
     width: 20%;
-    height: auto;
+    height: 60px;
     background-color: #44b4cc;
     /* se necesita especifica#1b3fr la altura */
     background-position: center;

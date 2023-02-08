@@ -1,11 +1,12 @@
 import React from 'react'
 import "./Styles/ResidentForm.css"
+import RickAndMortylogo from "/src/assets/Rick_and_Morty.png"
 
 const ResidentForm = ({handleSubmit}) => {
     return (
         <section className='residentForm'>
             <h1 className='residentForm__title'>
-                <img className='residentForm__title-img' src="src\assets\rick-and-morty-logo.png" alt="TITULO RICK Y MORTY" />
+                <img className='residentForm__title-img' src={RickAndMortylogo} alt="TITULO RICK Y MORTY" />
             </h1>
         <form className='residentForm__form' onSubmit={handleSubmit}>
             <input className='residentForm__input ' type="text" id='idLocation' placeholder='Look for a universe (1 to 126)'/>
