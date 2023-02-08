@@ -25,8 +25,9 @@ function App() {
     e.preventDefault()
     console.log(e.target.idLocation.value)
     setNameLocation(e.target.idLocation.value)
+    e.target.reset()
   }
-
+  
   //Funcion que se encarga de ubicar a los residentes por pagina
   const pagination = () => {
     if (!location) return []
