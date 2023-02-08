@@ -12,8 +12,7 @@ const ResidentForm = ({handleSubmit}) => {
             <label className='residentForm__lbl'>
                 <span className='residentForm__lbl-txt'></span>
             </label>
-                    
-            <button className='residentForm__btn'></button>
+            <button className='residentForm__btn'>Go!</button>
         </form>
         </section>
     )
