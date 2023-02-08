@@ -33,4 +33,11 @@
     height: 35px;
     width: 35px;
     border-radius: 100%;
+    transition: background-color, color 0.5s ease;
 }
+
+.pagination__item:hover {
+    background-color: #1b3f42;
+    color: #448981;
+}
+

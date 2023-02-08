@@ -22,9 +22,9 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 800px) {
     .residentForm {
-        height: 300px;
+        height: 350px;
     }
 }
 
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: row;
     height: 300px;
-    width: 400px;
+    width: 350px;
     position: relative;
     overflow: hidden;
 }
@@ -53,11 +53,13 @@
 
 .residentForm__title-img {
     width: auto;
-    max-height: 250px;
+    height: 250px;
+    padding: 0;
+    margin: 0;
 }
 
 .residentForm__input {
-    width: 100%;
+    width: 80%;
     max-height: 57px;
     background-color: #1b3f42;
     color: #c1da43;
@@ -119,10 +121,9 @@
 
 .residentForm__btn {
     display: flex;
-    width: 17%;
+    width: 20%;
     height: auto;
-    background-image: url(/src/assets/portalbtn.png);
-    background-color: none;
+    background-color: #44b4cc;
     /* se necesita especifica#1b3fr la altura */
     background-position: center;
     background-repeat: no-repeat;
@@ -130,9 +131,15 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
-    color: #1b3f42;
+    border-radius: 5px;
+    color: #c1da43;
     font-weight: 700;
     font-size: 28px;
+    transition: background-color, color 0.8s ease;
+}
+
+.residentForm__btn:hover { 
+    background-color: #c1da43;
+    color: #1b3f42;
 }
 
