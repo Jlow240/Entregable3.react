@@ -37,7 +37,9 @@
 .residentCard:hover .residentCard__status {
     background-color: #448981;
     animation-name: move;
+    animation-timing-function: ease-in-out;
     animation-duration: 3s;
+    animation-delay: .5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
