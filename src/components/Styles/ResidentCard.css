@@ -6,12 +6,14 @@
     position: relative;
     box-shadow: 0px 2px 10px black;
     transition: transform 200px ease;
-    
+    transition: background .5s ease-in-out;
+
 }
 
 .residentCard:hover {
     transform: scale(1.05);
-    
+    background-color: #1b3f42;
+
 }
 
 .residentCard__img {
@@ -29,14 +31,25 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: background-color .5s ease-in-out;
-    
 }
 
-.residentCard:hover .residentCard__status{
-    background-color:#448981;
-    
+
+.residentCard:hover .residentCard__status {
+    background-color: #448981;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
+@keyframes move {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
 
 .residentCard__status-name {
     font-weight: normal;
@@ -54,7 +67,7 @@
 }
 
 .Alive {
-    background-color: green;
+    background-color: #c1da43;
 }
 
 
@@ -65,7 +78,7 @@
 .residentCard__name {
     margin-bottom: 10px;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
 }
 
 .residentCard__line {
@@ -85,8 +98,12 @@
     line-height: 20px;
 }
 
-.residentCard__item span{
+.residentCard__item span {
     color: #1b3f42;
     font-weight: bold;
     display: block;
+}
+
+.residentCard:hover .residentCard__item span {
+    color: #c1da43;
 }
